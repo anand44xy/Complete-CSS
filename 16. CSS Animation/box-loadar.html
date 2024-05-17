@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      html {
+        font-size: 62.5%; /* Setting 1rem = 10px; & 1px= 6.25%*/
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        perspective: 2rem;
+        width: 15rem;
+        height: 15rem;
+      }
+      .box {
+        width: 6rem;
+        height: 6rem;
+        background-color: #2e3d50;
+        animation-name: boxLoadar;
+        animation-duration: .5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes boxLoadar {
+        17% {
+          border-bottom-right-radius: 0.3rem;
+        }
+        25% {
+          transform: rotate(22.5deg) translateY(0.9rem);
+        }
+        50% {
+          transform: rotate(45deg) translateY(1.8rem);
+          border-bottom-right-radius: 5rem;
+        }
+        75% {
+          transform: rotate(67deg) translateY(0.9rem);
+        }
+        100% {
+          transform: rotate(90deg);
+          border-bottom-right-radius: 0.3rem;
+        }
+      }
+      .shadow {
+        width: 6rem;
+        height: 1rem;
+        background-color: #c4c2c2;
+        border-radius: 50%;
+        animation-name: boxShadow;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        position: relative;
+        top: 1rem;
+        /* transform: translateZ(-5rem); */
+      }
+      @keyframes boxShadow{
+        from{scale: 1;}
+        to{scale: 0.6;}
+        /* 0%{transform: scale(1);}
+        50%{transform: scale(0.5);}
+        100%{transform: scale(1);} */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box"></div>
+      <div class="shadow"></div>
+    </div>
+  </body>
+</html>

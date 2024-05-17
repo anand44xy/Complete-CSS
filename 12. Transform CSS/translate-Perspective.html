@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Property</title>
+    <style>
+      body {
+        background-color: #00dbde;
+        background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+      }
+      .box1 {
+        perspective: 200px;
+        width: 450px;
+        height: 300px;
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+      .box2 {
+        width: 220px;
+        height: 150px;
+        background-color: white;
+        text-align: center;
+        translate: 20px 10px -5px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transition: 800ms; 
+        /* Tip: to use z-cordinate(3D) its neccessory to assign persecpective property and its value in parent element. 
+        NOTE:- Without assigning perspective in parent we can not assign z-cordinate value in translate property.
+        */
+        cursor: pointer;
+      }
+      .box2:hover {
+        translate: 150px 70px 50px;
+        background-color: aqua;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        rotate: z 360deg;
+      }
+
+      p{
+        padding: 20px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">
+      Taranslate, perspective & Rotate Property
+    </h2>
+    <div class="box1">
+      <div class="box2">
+        <p>Demo for translate propety that's allow you to change the positon of an
+          element.</p>
+      </div>
+    </div>
+  </body>
+</html>

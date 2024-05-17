@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #2c3e50, #bdc3c7);
+        }
+        .heading {
+            width: 300px;
+            height: 100px;
+            transform: translate(180%, 10%);
+        }
+        .container {
+            width: 300px;
+            height: 150px;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;         
+        }
+       
+        .column {
+            height: 100%;
+            width: 15px;
+            border-radius: 10px;
+            /* animation-name: googleEffect; 
+            animation-duration: 1000ms;  
+            animation-iteration-count: infinite; */
+            animation: googleEffect 1s infinite ;/* CSS Syntax 
+            animation: name duration timing-function delay iteraton-count direction-fill-mode; */
+
+        }
+        .column1 {
+            background-color: rgb(76, 0, 255);
+        }
+        .column2 {
+            background-color: red;
+            animation-delay: 200ms;
+        }
+        .column3 {
+            background-color: rgb(248, 202, 74);
+            animation-delay: 400ms;
+        }
+        .column4 {
+            background-color: rgb(39, 241, 90);
+            animation-delay: 200ms;
+        }
+        @keyframes googleEffect {
+            0%, 100% {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+            25% {
+                opacity: 0.7;
+            }
+            50% {
+                transform: scaleY(0.3);
+                opacity: 0.3;
+            }
+            75% {
+                opacity: 0.7;
+            }
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="heading"><h1>Say Ok Google...</h1></div>
+    <div class="container">
+        <div class="column column1"></div>
+        <div class="column column2"></div>
+        <div class="column column3"></div>
+        <div class="column column4"></div>
+    </div>
+</body>
+</html>

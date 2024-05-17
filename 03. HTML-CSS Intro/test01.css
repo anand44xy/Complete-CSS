@@ -1,0 +1,86 @@
+.main{
+    width: 1000px;
+    height: 540px;
+    background: rgb(83, 153, 223);
+}
+
+/* row1 */
+.row1{
+    width: 1000px;
+    height: 100px;
+    background: rgb(14, 71, 187);
+}
+
+
+/* row2 */
+.row2{
+    width: 1000px;
+    height: 40px;
+    background: rgb(228, 120, 192);
+}
+.r2c{
+    width: 200px;
+    height: 40px;
+    float: left;
+}
+
+/* row3 */
+.row3{
+    width: 1000px;
+    height: 200px;
+    background: yellow;
+}
+.r3c1{
+    width: 250px;
+    height: 200px;
+    background: rgb(84, 58, 231);
+    float: left;
+}
+.r3c{
+    width: 250px;
+    height: 40px;
+}
+.r3c2{
+    width: 750px;
+    height: 200px;
+    background: rgb(241, 82, 9);
+    float: left;
+}
+
+/* row4 */
+.row4{
+    width: 1000px;
+    height: 50px;
+    background: rgb(248, 248, 245);
+}
+
+/* row5 */
+.row5{
+    width: 1000px;
+    height: 100px;
+}
+.r5c1{
+    width: 330px;
+    height: 100px;
+    background: rgb(241, 82, 9);
+    float: left;
+}
+.r5c2{
+    width: 330px;
+    height: 100px;
+    background: rgb(22, 226, 83);
+    float: left;
+}
+.r5c3{
+    width: 340px;
+    height: 100px;
+    background: rgb(240, 7, 143);
+    float: left;
+} 
+
+/* row6 */
+.row6{
+    height: 50px;
+    width: 1000px;
+    background: salmon;
+}

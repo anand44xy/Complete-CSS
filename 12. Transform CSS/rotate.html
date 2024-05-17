@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate propety</title>
+    <style>
+      body {
+        background-color: #00dbde;
+        background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+      }
+      .box1 {
+        width: 450px;
+        height: 300px;
+        margin: auto;
+        cursor: pointer;
+        background-image: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+      p {
+        padding: 20px 20px;
+      }
+      .box2 {
+        width: 150px;
+        height: 150px;
+        translate: 40% 20%;
+        background-color: bisque;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        transform-origin: top left;
+        transition: 200ms;
+      }
+      .box1:hover .box2 {
+        rotate: 60deg;
+      }
+      .point {
+        width: 5px;
+        height: 5px;
+        border: 2px solid black;
+        border-radius: 50%;
+        translate: 5px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Rotate Property</h2>
+    <div class="box1">
+      <div class="box2">
+        <div class="point"></div>
+        <p>Demo for rotate propety that's allow you to rotate of an element.</p>
+      </div>
+    </div>
+  </body>
+</html>

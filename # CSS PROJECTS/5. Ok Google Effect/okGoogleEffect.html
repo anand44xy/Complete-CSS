@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>okGoogleEffect</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #3a6073, #16222a);
+      }
+
+      .container {
+        width: 300px;
+        height: 150px;
+        translate: 170% 70%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .line {
+        width: 10px;
+        height: 150px;
+        transition: transform 0.5s, opacity 0.5s;
+        position: relative;
+        border-radius: 10px;
+      }
+      .line:nth-child(1) {
+        transition-delay: 0.1s;
+      }
+      .line:nth-child(2) {
+        transition-delay: 0.3s;
+      }
+      .line:nth-child(3) {
+        transition-delay: 0.5s;
+      }
+      .line:nth-child(4) {
+        transition-delay: 0.7;
+      }
+
+      .line1 {
+        background-color: red;
+      }
+      .line2 {
+        background-color: skyblue;
+      }
+      .line3 {
+        background-color: greenyellow;
+      }
+      .line4 {
+        background-color: yellow;
+      }
+      .container:hover .line {
+        transform: scale(0);
+        opacity: 0;
+      }
+      h1{
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        /* translate: 50% 180%; */
+        margin-top: 100px;
+        margin-left: 520px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        width: 250px;
+        height: 50px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ok Gopgle ....</h1>
+    <div class="container">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+      <div class="line line4"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.main{
+    width: 996px;
+    height: 536px;
+    border: 2px solid black;
+}
+
+/* row1 */
+.row1{
+    width: 996px;
+    height: 96px;
+    border-bottom: 2px solid black;
+}
+
+/* row2 */
+.row2{
+    width: 996px;
+    height: 36px;
+    border-bottom: 2px solid black;
+    
+}
+.r2c{
+    width: 196px;
+    height: 36px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    float: left;
+}
+.r3c2{
+    width: 746px;
+    height: 196px;
+    border: none;
+    float: left;
+}
+
+/* row3 */
+.row3{
+    width: 996px;
+    height: 196px;
+    border-bottom: 2px solid black;
+   
+}
+.r3c1{
+    width:246px;
+    height: 196px;
+    border-right: 2px solid black;
+    float: left;
+}
+.r3c{
+    width: 246px;
+    height: 38px;
+    border-bottom: 2px solid black;
+}
+.r3c2{
+    width: 746px;
+    height: 196px;
+    float: left;
+    border: none;
+}
+
+/* row4 */
+.row4{
+    width: 996px;
+    height: 46px;
+    border-bottom: 2px solid black;  
+}
+
+/* row5 */
+.row5{
+    width: 996px;
+    height: 96px;
+    border-bottom: 2px solid black;
+}
+.r5c{
+    width: 327px;
+    height: 96px;
+    border-right: 2px solid black;
+    float: left;
+}
+
+/* row6 */
+.row6{
+    width: 996px;
+    height: 59px;
+    /* background-color: rgb(212, 20, 20); */
+}

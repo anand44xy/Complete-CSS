@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .box{
+            position: relative;
+            width: 150px;
+            height: 120px;
+            background-color: blanchedalmond;
+            animation-name: first-animation;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes first-animation{
+            /* from{
+                background-color: rgb(190, 119, 11);
+            }
+            to{
+                background-color: aqua;
+            } */
+
+            0% {background: linear-gradient(to right, #f64f59,#12c2e9); left: 0; top: 0; }
+            25% {background-color: #ff17d4; left: 300; top: 0px;}
+            50% { background-color: #ffcf46; left: 300px; top: 300px;}
+            75% {background-color: #a8c100; left: 0px; top: 300px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>#CSS Animation</h1>
+    <div class="box"></div> <br>
+
+    <article style="width: 500px; height: 500px;  padding:5px 2px 5px;">
+        <b>Note:</b>
+        <ol>  
+            <li>When an animation is finished, it goes back to its original style.</p></li>
+            <li>The animation-delay property specifies a delay for the start of an animation. The following example has a 2 seconds delay before starting the animation:</li>       
+        </ol>
+ 
+
+    </article>
+    
+</body>
+</html>

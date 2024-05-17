@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdowan-task</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: monospace;
+            list-style: none;
+            
+        }
+        a{
+            color: #ffff;
+            text-decoration: none;
+        }
+        body{
+            background-color: whitesmoke;
+        }
+
+        header{
+            width: 100%;
+            color: #ffff;
+            z-index: 2;
+            position: sticky;
+        }
+        nav{
+            width: 100%;
+            height: 60px;
+            margin: auto;
+            background-color: deepskyblue;
+            color: #ffff;
+            position: relative;
+        }
+        .topLeft-text{
+            position: relative;
+        }
+        .topLeft-text h3{
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        #menu{
+          gap: 50px;
+          font-family: 400;
+          display: flex; 
+          justify-content: flex-end;
+          padding-right: 150px;
+          padding-top: 20px; 
+        }
+        #menu li{
+            position: relative;
+            font-size: 19px;
+        }
+       
+        .child{
+            width: 130px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            line-height: 30px;
+            left: 0;
+            top: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 500ms;
+        }
+        .child li{
+            padding: 2px;
+            padding-left: 10px;
+        }
+
+        .child li:hover{
+            background-color: rgb(64, 85, 92);
+        }
+        #menu li:hover .child{
+            opacity: 1;
+            visibility: visible;
+        }
+        .subChild{
+            background-color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            line-height: 26px;
+            margin-left: 1px;
+            top: 50px;
+            left: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 500ms;
+        }
+        .child li:hover .subChild{
+            opacity: 1;
+            visibility: visible;
+            top: 0%;
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topLeft-text"><h3>Dropdown Menu Task</h3></div>
+            <ul id="menu">
+                <li><a href="">Home</a></li>
+                <li>
+                    <a href="">Services</a>
+                    <ul class="child">
+                        <li>
+                            <a href="">Web Design</a>
+                            <ul class="subChild">
+                                <li><a href="">HTML</a></li>
+                                <li><a href="">CSS</a></li>
+                                <li><a href="">JS</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Web Dev</a>
+                            <ul class="subChild">
+                                <li><a href="">React JSL</a></li>
+                                <li><a href="">MongoDB</a></li>
+                                <li><a href="">NodeJS</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">SEO</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Product</a>
+                    <ul class="child">
+                        <li>
+                            <a href="">Android</a>
+                            <ul class="subChild">
+                                <li><a href="">Samsung</a></li>
+                                <li><a href="">Vivo</a></li>
+                                <li><a href="">Infinix</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Windows</a>
+                            <ul class="subChild">
+                                <li><a href="">Lenovo</a></li>
+                                <li><a href="">acer</a></li>
+                                <li><a href="">Avita</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">iOS</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+</body>
+</html>

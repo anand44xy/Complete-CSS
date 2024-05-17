@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskt-2(Position-Day-02)</title>
+</head>
+<style>
+    .imgContainer{
+        width: 400px;
+        height: 300px;
+        margin: auto;
+        position: relative;
+       
+    }
+    img{
+        position: absolute;
+    }
+    .imgContainer:hover img:nth-child(1){
+        left: 400px;
+    }
+    .imgContainer:hover img:nth-child(2){
+        top: 300px;
+    }
+    .imgContainer:hover img:nth-child(3){
+        right: 400px;
+    }
+
+</style>
+<body>
+    <div class="imgContainer">
+        <img src="https://picsum.photos/400/300">
+        <img src="https://picsum.photos/id/238/400/300">
+        <img src="https://picsum.photos/id/239/400/300">
+        <img src="https://picsum.photos/id/240/400/300">
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container{
+            width: 1000px;
+            min-height: 900px;
+            background-color: aqua;
+            background: wheat;
+            display: flex;
+            margin: auto;
+            flex-wrap:wrap;
+            gap:5px;
+            align-content:flex-start;
+            align-items: center;
+            justify-content:center;
+            /* align-items:baseline;
+            align-self:flex-start; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 0; */
+            /* flex-basis: content; */
+            padding: 20px;
+        }
+        .box{
+            border: 2px solid black;
+            width: 150px;
+            height: 100px;
+            /* background-color: rgb(159, 152, 216); */
+            /* text-align:center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(14, 1, 1);
+            box-sizing: border-box;
+            justify-content: center;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            flex-grow: 1;
+            flex-shrink: 1;
+
+        }
+
+        .img-container{
+            width: 100%;
+            min-height: 500px;
+            border: 2px solid black;
+            display: flex;
+            /* justify-content:flex-start; */
+            /* flex-wrap: wrap; */
+        }
+        .img-box img{
+            width: 200px;
+            height: 150px;
+            /* border: 2px solid black; */
+            flex-shrink: 1;
+            flex-grow: 0;
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <h3 style="text-align: center; font-family: 'Segoe UI'; font-weight: 600; font-size: 30px ;">Display-Flex</h3>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+        <div class="box">13</div>
+        <div class="box">14</div>
+        <div class="box">15</div>
+        <div class="box">16</div>
+
+        <div class="img-container">
+            <div class="img-box">
+                <img src="https://picsum.photos/200/300?random=1" alt="random-images">
+            </div>
+            <div class="img-box">
+                <img src="https://picsum.photos/200/300?random=2" alt="random-images">
+            </div>
+            <div class="img-box" style="flex-shrink: 0;">
+                <img src="https://picsum.photos/200/300?random=3" alt="random-images">
+            </div>
+            <div class="img-box">
+                <img src="https://picsum.photos/200/300?random=4" alt="random-images">
+            </div>
+            <div class="img-box">
+                <img src="https://picsum.photos/200/300?random=5" alt="random-images">
+            </div>
+            <div class="img-box">
+                <img src="https://picsum.photos/200/300?random=6k" alt="random-images">
+            </div>
+            
+    </div>
+</body>
+</html>

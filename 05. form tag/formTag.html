@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form tags</title>
+    <style>
+        .formTags{
+            width: 700px;
+            height: 900px;
+            background: lightblue;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 15px;
+            padding: 30px;
+            font-family:'Courier New', Courier, monospace;  
+            font-size:23px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="formTags">
+        <h3 style="font-size: 20px; font-family:'Gill Sans';">HTML Form Tags</h3>
+        <form action="/action_page.php">
+            <!-- textfield -->
+            <label for="fname">First Name:</label>
+              <input type="text" name="fname"><br><br>
+            <label for="lname">Last Name:</label>
+              <input type="text" name="lname"><br><br>
+            <!-- textarea -->
+            <label for="tarea">Enter Your Address:</label><br>
+              <textarea name="usrAddress" id="usadd" cols="30" rows="3"></textarea><br><br>
+            <!-- Email -->
+            <label for="usrname">Email:</label>
+              <input type="email" name="email" id="us"><br>
+            <!-- Password -->
+            <label for="pass">Password:</label>
+               <input type="password" name="uspaa" id="uspaa"><br> 
+            <!-- Submit button -->
+            <input type="submit" name="submitBtb" id="sbt"><br><br>
+
+            <!-- checkbox -->
+            <label for="stdG">Gender:</label>
+            <label for="gender">Male</label>
+              <input type="radio" name="gender">
+            <label for="gender">Female</label>
+              <input type="radio" name="gender">
+            <label for="gender">Ohter</label>
+              <input type="radio" name="gender"><br><br>
+            
+            <!-- Checkbox -->
+            <label for="hobby">Hobby:</label><br>
+            <label for="cricket">Cricket</label>
+              <input type="checkbox" name="cricket" id="cricket">
+            <label for="Badmintan">Badmintan</label>
+              <input type="checkbox" name="Badmintan" id="Badmintan">
+            <label for="Hokey">Hokey</label>
+              <input type="checkbox" name="Hokey" id="Hokey"><br><br>
+
+            <!-- file -->
+            <label>Select file to upload:</label><br>
+             <input type="file" name="newfile"><br>
+             <input type="submit" value="submit"><br><br>
+
+            <!-- color piker -->
+            <label>Pik Your Fav Color:</label>
+            <input type="color" name="fcolor"><br><br>
+
+            <!-- date -->
+            <label>DOB</label>
+            <input type="date" name="dob" max="2000-02-01" min="2020-01-01"><br><br>
+
+            <!-- optin & select tag -->
+            <label for="selectFruit">Select your favorite fruit:</label>
+            <select id="selectFruit" name="fruit">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="orange">Orange</option>
+                <option value="grape">Grape</option>
+            </select>
+            <input type="submit" value="Submit"><br><br>
+
+            <!-- Range input -->
+            <label for="volume">Volume:</label>
+            <input type="range" name="volume" min="0" max="10" value="4"><br><br>
+
+            <!-- Hindden input -->
+            <input type="hidden" name="secretcode"  value="43">
+
+            <!-- URL input -->
+            <label>Enter your website url:</label>
+            <input type="url" name="website" placeholder="http://example.com"><br>
+            <input type="submit" value="Send data">
+
+        
+
+
+
+            
+
+    
+    
+    
+    
+    
+        </form>
+
+    </div>
+    
+</body>
+</html>

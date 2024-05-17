@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+   <style>
+    body{background: linear-gradient(to left, #bbd2c5, #536976, #292e49);}
+    .container{
+        width: 500px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 60px auto;
+    }
+    .heart img{
+        width: 120px;
+        height: 120px;
+        animation: heartbeat 400ms infinite;
+    }
+    @keyframes heartbeat{
+        0%{transform: scale(1);}
+        50%{transform: scale(1.2);}
+        100%{transform: scale(1);}
+    }
+    .pipe-smoking i{
+        font-size: 40px;
+        animation: pipe-move 2s infinite forwards;
+    }
+    @keyframes pipe-move{
+        form{transform: translateX(0);}
+        to{transform: translateX(-600%);}
+    }
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart"><img src="images/—Pngtree—red heart valentine s day_5720987.png" alt=""></div>
+        <div class="pipe-smoking"><i class="fa-solid fa-pipe-smoking"></i></div>
+    </div>
+</body>
+</html>

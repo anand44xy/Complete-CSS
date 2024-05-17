@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html{
+            font-size: 62.5%;
+        }
+        .parent{
+            width: 20rem;
+            height: 3rem;
+            margin: 6rem auto;
+            font-size: 2.5rem;
+            display: flex;
+            overflow: hidden;
+            justify-content: center;
+        }
+        .parent span{
+            flex-grow: 1;
+            animation-name: load-text;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            transform: translateY(100%);
+        }
+        @keyframes load-text{
+            0%{transform: translateY(100%);}
+            0%, 25%, 75%{transform: translateY(0%);}
+            100%{transform: translateY(-100%);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <span >L</span>
+        <span style="animation-delay: 200ms;">O</span>
+        <span style="animation-delay: 400ms;">A</span>
+        <span style="animation-delay: 600ms;">D</span>
+        <span style="animation-delay: 800ms;">I</span>
+        <span style="animation-delay: 900ms;">N</span>
+        <span style="animation-delay: 1000ms;">G</span>
+        <span style="animation-delay: 1200ms;">.</span>
+        <span style="animation-delay: 1400ms;">.</span>
+        <span style="animation-delay: 1600ms;">.</span>
+    </div>
+</body>
+</html>
